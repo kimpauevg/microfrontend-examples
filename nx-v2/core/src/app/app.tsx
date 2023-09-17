@@ -1,12 +1,14 @@
 import * as React from 'react';
+import { loadRemoteModule } from '@nx-v2/load-remote-module';
 
 import NxWelcome from './nx-welcome';
 
 import { Link, Route, Routes } from 'react-router-dom';
 
-const About = React.lazy(() => import('about/Module'));
+const About = React.lazy(() => loadRemoteModule('About', './Module'));
 
-const Description = React.lazy(() => import('description/Module'));
+const Description = React.lazy(() => loadRemoteModule('Description', './Module'));
+
 
 export function App() {
   return (
