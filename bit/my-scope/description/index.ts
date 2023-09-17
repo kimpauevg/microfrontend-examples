@@ -1,0 +1,1 @@
+export { DescriptionApp } from './app';
