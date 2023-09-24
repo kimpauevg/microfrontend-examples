@@ -1,0 +1,14 @@
+{
+  "name": "rushjs-example",
+  "version": "1.0.0",
+  "description": "This repo is used as a POC (proof of concept) for usage of a micro-frontend architecture (managing several front applications) that suites to a human feature team organization.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@microsoft/rush": "^5.106.0"
+  }
+}
