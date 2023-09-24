@@ -8,8 +8,8 @@ const Navbar = () => {
       <SLink exact={true} activeClassName='is-active' to='/'>
         Home
       </SLink>
-      <SLink activeClassName='is-active' to='/blog/'>
-        Blog
+      <SLink activeClassName='is-active' to='/about/'>
+        About
       </SLink>
     </SWrapper>
   );

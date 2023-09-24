@@ -8,11 +8,11 @@ module.exports = {
   mode: "development",
   devServer: {
     contentBase: path.join(__dirname, "dist"),
-    port: 3003,
+    port: 3001,
     historyApiFallback: true,
   },
   output: {
-    publicPath: "http://localhost:3003/",
+    publicPath: "http://localhost:3001/",
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js"],
@@ -37,8 +37,8 @@ module.exports = {
       extensions: ["js", "jsx", "ts", "tsx"],
     }),
     new ModuleFederationPlugin({
-      name: "blog",
-      library: { type: "var", name: "blog" },
+      name: "about",
+      library: { type: "var", name: "about" },
       filename: "remoteEntry.js",
       exposes: {
         "./App": "./src/App",

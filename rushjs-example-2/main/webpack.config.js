@@ -17,10 +17,7 @@ module.exports = merge(common, {
             name: "main",
             library: {type: "var", name: "main"},
             remotes: {
-                product: "product",
-                shopping: "shopping",
-                blog: "blog",
-                settings: "settings",
+                about: "about",
             },
         }),
     ]

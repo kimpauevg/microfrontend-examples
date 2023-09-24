@@ -390,24 +390,12 @@
    */
    "projects": [
     {
-      "packageName": "product",
-      "projectFolder": "product"
-    },
-    {
-      "packageName": "shopping",
-      "projectFolder": "shopping"
-    },
-    {
       "packageName": "main",
       "projectFolder": "main"
     },
     {
-      "packageName": "blog",
-      "projectFolder": "blog"
-    },
-    {
-      "packageName": "settings",
-      "projectFolder": "settings"
+      "packageName": "about",
+      "projectFolder": "about"
     }
   ]
 }
