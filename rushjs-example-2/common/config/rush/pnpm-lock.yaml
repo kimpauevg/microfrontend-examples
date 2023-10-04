@@ -1,4 +1,5 @@
 dependencies:
+  '@babel/eslint-parser': 7.22.15_eslint@7.22.0
   '@babel/preset-typescript': 7.22.15
   '@rush-temp/about': file:projects/about.tgz
   '@rush-temp/main': file:projects/main.tgz
@@ -12,7 +13,8 @@ dependencies:
   bundle-loader: 0.5.6
   eslint: 7.22.0
   eslint-webpack-plugin: 2.5.3_eslint@7.22.0
-  react-redux: 7.2.3_redux@4.0.5
+  react: 18.2.0
+  react-redux: 7.2.3_react@18.2.0+redux@4.0.5
   redux: 4.0.5
   redux-thunk: 2.3.0
   typescript: 5.2.2
@@ -98,6 +100,20 @@ packages:
       node: '>=6.9.0'
     resolution:
       integrity: sha512-Y6jd1ahLubuYweD/zJH+vvOY141v4f9igNQAQ+MBgq9JlHS2iTsZKn1aMsb3vGccZsXI16VzTBw52Xx0DWmtnA==
+  /@babel/eslint-parser/7.22.15_eslint@7.22.0:
+    dependencies:
+      '@nicolo-ribaudo/eslint-scope-5-internals': 5.1.1-v1
+      eslint: 7.22.0
+      eslint-visitor-keys: 2.1.0
+      semver: 6.3.1
+    dev: false
+    engines:
+      node: ^10.13.0 || ^12.13.0 || >=14.0.0
+    peerDependencies:
+      '@babel/core': ^7.11.0
+      eslint: ^7.5.0 || ^8.0.0
+    resolution:
+      integrity: sha512-yc8OOBIQk1EcRrpizuARSQS0TWAcOMpEJ1aafhNznaeYkeL+OhqnDObGFylB8ka8VFF/sZc+S4RzHyO+3LjQxg==
   /@babel/eslint-parser/7.22.15_f7ddb76b3798da6f8b54419490eb56d5:
     dependencies:
       '@babel/core': 7.22.20
@@ -2775,7 +2791,7 @@ packages:
       '@babel/helper-module-imports': 7.22.15
       babel-plugin-syntax-jsx: 6.18.0
       lodash: 4.17.21
-      styled-components: 5.2.1_react-dom@17.0.2+react@17.0.2
+      styled-components: 5.2.1_react-dom@18.2.0+react@18.2.0
     dev: false
     peerDependencies:
       styled-components: '>= 2'
@@ -5915,11 +5931,11 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==
-  /mini-create-react-context/0.4.1_prop-types@15.8.1+react@17.0.2:
+  /mini-create-react-context/0.4.1_prop-types@15.8.1+react@18.2.0:
     dependencies:
       '@babel/runtime': 7.13.10
       prop-types: 15.8.1
-      react: 17.0.2
+      react: 18.2.0
       tiny-warning: 1.0.3
     deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     dev: false
@@ -6686,17 +6702,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==
-  /react-dom/17.0.2_react@17.0.2:
-    dependencies:
-      loose-envify: 1.4.0
-      object-assign: 4.1.1
-      react: 17.0.2
-      scheduler: 0.20.2
-    dev: false
-    peerDependencies:
-      react: 17.0.2
-    resolution:
-      integrity: sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA==
   /react-dom/18.2.0_react@18.2.0:
     dependencies:
       loose-envify: 1.4.0
@@ -6711,15 +6716,15 @@ packages:
     dev: false
     resolution:
       integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
-  /react-redux/7.2.3_8436876974e3dcafae98d64b636de192:
+  /react-redux/7.2.3_b6939688c40f7676bf155693c696c947:
     dependencies:
       '@babel/runtime': 7.13.10
       '@types/react-redux': 7.1.16
       hoist-non-react-statics: 3.3.2
       loose-envify: 1.4.0
       prop-types: 15.7.2
-      react: 17.0.2
-      react-dom: 17.0.2_react@17.0.2
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
       react-is: 16.13.1
       redux: 4.0.5
     dev: false
@@ -6735,13 +6740,14 @@ packages:
         optional: true
     resolution:
       integrity: sha512-ZhAmQ1lrK+Pyi0ZXNMUZuYxYAZd59wFuVDGUt536kSGdD0ya9Q7BfsE95E3TsFLE3kOSFp5m6G5qbatE+Ic1+w==
-  /react-redux/7.2.3_redux@4.0.5:
+  /react-redux/7.2.3_react@18.2.0+redux@4.0.5:
     dependencies:
       '@babel/runtime': 7.13.10
       '@types/react-redux': 7.1.16
       hoist-non-react-statics: 3.3.2
       loose-envify: 1.4.0
       prop-types: 15.7.2
+      react: 18.2.0
       react-is: 16.13.1
       redux: 4.0.5
     dev: false
@@ -6757,14 +6763,14 @@ packages:
         optional: true
     resolution:
       integrity: sha512-ZhAmQ1lrK+Pyi0ZXNMUZuYxYAZd59wFuVDGUt536kSGdD0ya9Q7BfsE95E3TsFLE3kOSFp5m6G5qbatE+Ic1+w==
-  /react-router-dom/5.2.0_react@17.0.2:
+  /react-router-dom/5.2.0_react@18.2.0:
     dependencies:
       '@babel/runtime': 7.13.10
       history: 4.10.1
       loose-envify: 1.4.0
       prop-types: 15.8.1
-      react: 17.0.2
-      react-router: 5.2.0_react@17.0.2
+      react: 18.2.0
+      react-router: 5.2.0_react@18.2.0
       tiny-invariant: 1.1.0
       tiny-warning: 1.0.3
     dev: false
@@ -6786,16 +6792,16 @@ packages:
       react-dom: '>=16.8'
     resolution:
       integrity: sha512-aTfBLv3mk/gaKLxgRDUPbPw+s4Y/O+ma3rEN1u8EgEpLpPe6gNjIsWt9rxushMHHMb7mSwxRGdGlGdvmFsyPIg==
-  /react-router/5.2.0_react@17.0.2:
+  /react-router/5.2.0_react@18.2.0:
     dependencies:
       '@babel/runtime': 7.13.10
       history: 4.10.1
       hoist-non-react-statics: 3.3.2
       loose-envify: 1.4.0
-      mini-create-react-context: 0.4.1_prop-types@15.8.1+react@17.0.2
+      mini-create-react-context: 0.4.1_prop-types@15.8.1+react@18.2.0
       path-to-regexp: 1.8.0
       prop-types: 15.8.1
-      react: 17.0.2
+      react: 18.2.0
       react-is: 16.13.1
       tiny-invariant: 1.1.0
       tiny-warning: 1.0.3
@@ -6815,15 +6821,6 @@ packages:
       react: '>=16.8'
     resolution:
       integrity: sha512-VT4Mmc4jj5YyjpOi5jOf0I+TYzGpvzERy4ckNSvSh2RArv8LLoCxlsZ2D+tc7zgjxcY34oTz2hZaeX5RVprKqA==
-  /react/17.0.2:
-    dependencies:
-      loose-envify: 1.4.0
-      object-assign: 4.1.1
-    dev: false
-    engines:
-      node: '>=0.10.0'
-    resolution:
-      integrity: sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==
   /react/18.2.0:
     dependencies:
       loose-envify: 1.4.0
@@ -7189,13 +7186,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
-  /scheduler/0.20.2:
-    dependencies:
-      loose-envify: 1.4.0
-      object-assign: 4.1.1
-    dev: false
-    resolution:
-      integrity: sha512-2eWfGgAqqWFGqtdMmcL5zCMK1U8KlXv8SQFGglL3CEtd0aDVDWgeF/YoCmvln55m5zSk3J/20hTaSBeSObsQDQ==
   /scheduler/0.23.0:
     dependencies:
       loose-envify: 1.4.0
@@ -7871,7 +7861,7 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
-  /styled-components/5.2.1_react-dom@17.0.2+react@17.0.2:
+  /styled-components/5.2.1_react-dom@18.2.0+react@18.2.0:
     dependencies:
       '@babel/helper-module-imports': 7.22.15
       '@babel/traverse': 7.22.20_supports-color@5.5.0
@@ -7881,8 +7871,8 @@ packages:
       babel-plugin-styled-components: 1.12.0_styled-components@5.2.1
       css-to-react-native: 3.2.0
       hoist-non-react-statics: 3.3.2
-      react: 17.0.2
-      react-dom: 17.0.2_react@17.0.2
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
       shallowequal: 1.1.0
       supports-color: 5.5.0
     dev: false
@@ -8914,7 +8904,7 @@ packages:
     dev: false
     name: '@rush-temp/about'
     resolution:
-      integrity: sha512-RgRLaWAquEOrYdSlc2WvzG/mXF/IlFXv97Bewe63ow3SqnGuTdFWkfJ9+wZQX3GSVYmZJjs7RsGgXdDUUwHCMA==
+      integrity: sha512-B6HFa4mL+RmJcXg0/dy9IEd2e2C+fVOh6KzUHaDdu1c+bcCvopVXSBQ/VryMo+8uzqfNTPb+OG2gIn8N2CVciA==
       tarball: file:projects/about.tgz
     version: 0.0.0
   file:projects/main.tgz:
@@ -8928,15 +8918,15 @@ packages:
       eslint-plugin-react: 7.33.2_eslint@7.22.0
       eslint-webpack-plugin: 2.5.3_eslint@7.22.0+webpack@5.88.2
       html-webpack-plugin: 5.5.3_webpack@5.88.2
-      react: 17.0.2
-      react-dom: 17.0.2_react@17.0.2
-      react-redux: 7.2.3_8436876974e3dcafae98d64b636de192
-      react-router-dom: 5.2.0_react@17.0.2
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      react-redux: 7.2.3_b6939688c40f7676bf155693c696c947
+      react-router-dom: 5.2.0_react@18.2.0
       redux: 4.0.5
       redux-thunk: 2.3.0
       serve: 11.3.2
       source-map-loader: 2.0.1_webpack@5.88.2
-      styled-components: 5.2.1_react-dom@17.0.2+react@17.0.2
+      styled-components: 5.2.1_react-dom@18.2.0+react@18.2.0
       webpack: 5.88.2_webpack-cli@4.6.0
       webpack-cli: 4.6.0_430bcedaa0c6f29f3ff222d8db4bd87f
       webpack-dev-server: 3.11.2_webpack-cli@4.6.0+webpack@5.88.2
@@ -8944,11 +8934,12 @@ packages:
     dev: false
     name: '@rush-temp/main'
     resolution:
-      integrity: sha512-IizTIKW558z+4gedDcBnM30CJfINOH5cNzR9RWc7zOg9H8iVVwIc6b3BWdCvncxmvzgcWTAWW9VRCBrmea4+7Q==
+      integrity: sha512-U/w9k3GHnHZKDaePhVGQMW2GKlRxiiXF+K4CdLu8L9er9o+hmnwSoBcoLoouyPb4snUbD3S/WHZ462MQf7covw==
       tarball: file:projects/main.tgz
     version: 0.0.0
 registry: ''
 specifiers:
+  '@babel/eslint-parser': ~7.22.15
   '@babel/preset-typescript': ^7.22.15
   '@rush-temp/about': file:./projects/about.tgz
   '@rush-temp/main': file:./projects/main.tgz
@@ -8962,6 +8953,7 @@ specifiers:
   bundle-loader: ^0.5.6
   eslint: ~7.22.0
   eslint-webpack-plugin: ~2.5.2
+  react: ^18.0.1
   react-redux: ^7.2.2
   redux: ^4.0.5
   redux-thunk: ^2.3.0
