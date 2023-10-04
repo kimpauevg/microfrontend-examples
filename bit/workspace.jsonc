@@ -41,11 +41,21 @@
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
       "dependencies": {
-        "react": "^18.2.0"
+        "@learnbit-react/module-federation.envs.mf-host-env": "0.0.3",
+        "@learnbit-react/module-federation.envs.mf-remote-env": "0.0.4",
+        "@learnbit-react/module-federation.webpack-transformers.mf-host-transformer": "0.0.9",
+        "@learnbit-react/module-federation.webpack-transformers.mf-remote-transformer": "0.0.9",
+        "@teambit/cloud-providers.deployers.netlify": "0.1.17",
+        "@teambit/docs.docs-template": "0.0.8",
+        "@teambit/mdx.ui.mdx-scope-context": "0.0.496",
+        "@teambit/preview.react-preview": "0.0.16",
+        "@teambit/react.apps.react-app-types": "0.0.10",
+        "@teambit/react.mounter": "0.0.8",
+        "@teambit/react.react-env": "0.0.44",
+        "react-router-dom": "6.4.3",
+        "webpack": "5.75.0"
       },
-      "peerDependencies": {
-        "react-router-dom": "^6.16.0"
-      }
+      "peerDependencies": {}
     },
     "linkCoreAspects": true,
     "rootComponents": true
@@ -53,5 +63,6 @@
   "teambit.workspace/workspace-config-files": {
     "enableWorkspaceConfigWrite": true
   },
-  "my-scope/core": {}
+  "my-scope/apps/host-app": {},
+  "my-scope/apps/remote-app": {}
 }
