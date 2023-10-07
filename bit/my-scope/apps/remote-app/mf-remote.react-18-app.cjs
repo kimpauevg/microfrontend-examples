@@ -1,6 +1,6 @@
 const {
   moduleFederationRemoteTransformer,
-} = require('@learnbit-react/module-federation.webpack-transformers.mf-remote-transformer');
+} = require('@my-scope/module-federation.webpack-transformers.mf-remote-transformer');
 const { Netlify } = require('@teambit/cloud-providers.deployers.netlify');
 
 const netlifyOptions = {

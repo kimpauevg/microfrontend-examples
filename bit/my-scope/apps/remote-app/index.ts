@@ -1,1 +1,1 @@
-export { MarsWeather } from "./app";
+export { About } from "./app";

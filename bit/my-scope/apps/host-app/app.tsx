@@ -1,18 +1,31 @@
-/* eslint import/no-unresolved: [2, { ignore: ['mars_weather/MarsWeatherComponent'] }] */
-import React from 'react';
+import * as React from 'react';
 
-// @ts-ignore-next-line @bit-ignore
-const RemoteApp = React.lazy(() => import('mars_weather/MarsWeatherComponent'));
+import {BrowserRouter} from "react-router-dom";
+
+import Header from "./components/Header";
+// @ts-ignore
+import Navbar from "./components/Navbar";
+
+// @ts-ignore
+import {GlobalStyle, SWrapper} from './styles';
+// @ts-ignore
+import Routes from './routes';
 
 const App = () => {
-  return (
-    <div>
-      <h1>Host App</h1>
-      <React.Suspense fallback={<h4>Loading remote app...</h4>}>
-        <RemoteApp />
-      </React.Suspense>
-    </div>
-  );
-};
+    return (
+        <>
+            <GlobalStyle />
+            <BrowserRouter>
+                <Header sitename="Test Microservice"/>
+                <Navbar />
+                <SWrapper>
+                    <React.Suspense fallback={"Loading"}>
+                        <Routes />
+                    </React.Suspense>
+                </SWrapper>
+            </BrowserRouter>
+        </>
+    )
+}
 
 export default App;
