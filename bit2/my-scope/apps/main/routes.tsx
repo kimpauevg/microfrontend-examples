@@ -1,4 +1,4 @@
-/* eslint import/no-unresolved: [2, { ignore: ['about/About'] }] */
+/* eslint import/no-unresolved: [2, { ignore: ['mars_weather/AboutComponent'] }] */
 import React from 'react';
 import { Route, Routes as ReactRoutes } from 'react-router-dom';
 
@@ -6,7 +6,7 @@ import HomePage from './components/HomePage';
 
 // Lazy loaded sub-applications
 // @ts-ignore-next-line @bit-ignore
-const About = React.lazy(() => import('about/AboutComponent'));
+const About = React.lazy(() => import('mars_weather/AboutComponent'));
 
 const Routes = () => {
   return (

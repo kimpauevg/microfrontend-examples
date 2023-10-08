@@ -12,7 +12,7 @@ const netlifyOptions = {
 
 /** @type {import("@teambit/react.apps.react-app-types").ReactAppType} */
 module.exports.default = {
-  name: 'mf-host',
+  name: 'main',
   entry: [require.resolve('./mf-host.app-root')],
   portRange: [3020, 3030],
   webpackTransformers: [moduleFederationHostransformer],

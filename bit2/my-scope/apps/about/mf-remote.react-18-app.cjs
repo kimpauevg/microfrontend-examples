@@ -1,6 +1,6 @@
 const {
   moduleFederationRemoteTransformer,
-} = require('@my-scope/module-federation.webpack-transformers.mf-remote-transformer');
+} = require('@my-scope/webpack-transformers.mf-remote-transformer');
 const { Netlify } = require('@teambit/cloud-providers.deployers.netlify');
 
 const netlifyOptions = {
@@ -10,8 +10,8 @@ const netlifyOptions = {
   stagingSiteName: 'mf-remote-staging',
 };
 
-const mfRemoteApp = {
-  name: 'mf-remote',
+const mfAbout = {
+  name: 'about',
   portRange: [60000, 60000],
   entry: [require.resolve('./mf-remote.app-root')],
   webpackTransformers: [
@@ -26,4 +26,4 @@ const mfRemoteApp = {
   deploy: Netlify.deploy(netlifyOptions),
 };
 
-module.exports.default = mfRemoteApp;
+module.exports.default = mfAbout;

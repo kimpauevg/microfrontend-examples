@@ -13,9 +13,9 @@ export const moduleFederationHostransformer: WebpackConfigTransformer = (
       /* the remote apps to be loaded by this host app */
       remotes: {
         /* the name to be used for this remote app */
-        about:
+        mars_weather:
           /* the-remote-app-name@the-remote-app-url */
-          'about@http://localhost:60000/remoteEntry.js',
+          'mars_weather@http://localhost:60000/remoteEntry.js',
       },
       /**
        * a list of peer dependencies (to load by this host app, and not by any other remote app).

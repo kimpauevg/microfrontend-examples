@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #e1e1e0;
+    border-radius: 8px;
+    max-width: 500px;
+    flex-wrap: wrap;
+    -webkit-box-shadow: -1px 3px 15px 1px #8E8E8E;
+    box-shadow: -1px 3px 15px 1px #8E8E8E;
+    
+    img {
+        border-radius: 50%;
+        border: 10px solid #e1e1e0;
+        height: 100px;
+    }
+
+    h1 {
+        color:#cb9b7d;
+    }
+
+    span {
+        color: darkgray;
+    }
+}

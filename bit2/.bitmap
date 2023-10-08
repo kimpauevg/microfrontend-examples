@@ -9,11 +9,44 @@
  */
 
 {
-    "apps/host-app": {
+    "apps/about": {
         "scope": "",
         "version": "",
         "mainFile": "index.ts",
-        "rootDir": "my-scope/apps/host-app",
+        "rootDir": "my-scope/apps/about",
+        "config": {
+            "teambit.envs/envs": {
+                "env": "learnbit-react.module-federation/envs/mf-remote-env"
+            },
+            "learnbit-react.module-federation/envs/mf-remote-env@0.0.4": {},
+            "teambit.dependencies/dependency-resolver": {
+                "policy": {
+                    "peerDependencies": {
+                        "react": "18.2.0",
+                        "react-dom": "18.2.0"
+                    }
+                }
+            },
+            "teambit.harmony/application": {},
+            "teambit.compositions/compositions": {},
+            "teambit.docs/docs": {},
+            "teambit.preview/preview": {},
+            "teambit.component/dev-files": {},
+            "teambit.pipelines/builder": {},
+            "teambit.component/forking": {
+                "forkedFrom": {
+                    "scope": "learnbit-react.module-federation",
+                    "name": "apps/remote-app",
+                    "version": "0.0.21"
+                }
+            }
+        }
+    },
+    "apps/main": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "my-scope/apps/main",
         "config": {
             "teambit.dependencies/dependency-resolver": {
                 "policy": {
@@ -41,39 +74,6 @@
                     "scope": "learnbit-react.module-federation",
                     "name": "apps/host-app",
                     "version": "0.0.15"
-                }
-            }
-        }
-    },
-    "apps/remote-app": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "my-scope/apps/remote-app",
-        "config": {
-            "teambit.envs/envs": {
-                "env": "learnbit-react.module-federation/envs/mf-remote-env"
-            },
-            "learnbit-react.module-federation/envs/mf-remote-env@0.0.4": {},
-            "teambit.dependencies/dependency-resolver": {
-                "policy": {
-                    "peerDependencies": {
-                        "react": "18.2.0",
-                        "react-dom": "18.2.0"
-                    }
-                }
-            },
-            "teambit.harmony/application": {},
-            "teambit.compositions/compositions": {},
-            "teambit.docs/docs": {},
-            "teambit.preview/preview": {},
-            "teambit.component/dev-files": {},
-            "teambit.pipelines/builder": {},
-            "teambit.component/forking": {
-                "forkedFrom": {
-                    "scope": "learnbit-react.module-federation",
-                    "name": "apps/remote-app",
-                    "version": "0.0.21"
                 }
             }
         }
