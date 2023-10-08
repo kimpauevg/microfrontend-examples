@@ -43,7 +43,7 @@ nx install
 
 Запуск приложений
 ```
-nx run-many -p main about 
+nx run-many --parallel --target=serve --projects=main,about --maxParallel=100
 ```
 
 ### rush
